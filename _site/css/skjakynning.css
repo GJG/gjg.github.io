@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body 
+{
+    background: #1a1a1a url('../myndir/VSH_1To.svg') 2em 2em fixed no-repeat;
+    font: 1em/1.6em sans-serif;
+    text-align: center;
+}
+h1 {
+	color: rgb(199,199,199);
+	font-weight: normal;
+}
+p {
+    color: #fff;
+}
+a {
+    color: #ff0;
+}
+.media
+{
+    margin:1em auto;
+    width: 100%;
+    max-width:1024px;
+}
+video {
+	width: 100%;
+	height: auto;
+}
+

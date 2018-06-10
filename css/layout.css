@@ -1,0 +1,239 @@
+ body {
+ 	max-width:60em; /*0 ~ 960px*/
+  	margin: 0 auto;
+	padding:0;
+
+/*  font-style(1) -weight(2) -size(3) -family(4) */
+	font:normal normal 1em/1.5em "Trebuchet MS", Arial, sans-serif;
+	
+	background: url("../images/body-bg.png") -100px bottom fixed no-repeat;
+
+}
+* {
+	box-sizing:border-box;
+} 
+
+/************ Grid system  ***********
+Group heldur utanum dálka
+	1 dálkur:	header = .I-I 
+	2 dálkar:	aside= .I-I / article = .II-I	 
+*/
+.group {
+  display: flex;
+  flex-flow: row;
+}
+
+/*100%*/
+.I-I{ 
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+/*50%*/
+.II-I {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 1.4em;
+}
+/*66%*/
+.III-I {
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 2.1em;
+}
+/*75%*/
+.IV-I {
+  flex-grow: 4;
+  flex-shrink: 4;
+  flex-basis: 2.7em;
+}
+
+/*****  TYPOGRAPHY  ******/
+
+
+h1 {
+	font-weight: normal;
+	font-size: 3em;
+	line-height: .8em;
+	letter-spacing: .1em;
+	color:#00467f;
+}
+
+audio, video {
+	padding:0;
+}
+h4 {
+	margin-bottom: 0;
+	color:#00467f;
+}
+h2, h3 {
+	color:#00467f;
+	padding-left: .5em; 
+}
+p {
+	padding: 0 1em; 
+}
+
+/******* Layout **********/
+hr {
+	width: 70%;
+	margin: 2em auto;
+}
+
+footer {
+	padding: .5em 0 5em 0;
+}
+footer p {		
+	margin:0;
+	padding:.6em;
+	text-align:center;
+}
+
+img, video, audio {
+	max-width: 100%;
+	height: auto;
+}
+audio {
+
+}
+figure{
+	margin:0;
+	padding: 0;
+}
+/*myndatexti*/
+figcaption {
+	font-style:italic;
+	padding: 0 0 0 1em; 
+}
+/*áherslutexti*/
+blockquote {
+	border:1px dashed;
+	border-radius: 4px;
+	padding:.5em;
+	margin:1em;
+}
+audio {
+	
+}
+ul {
+	list-style-image: url('../images/takn.png');
+}
+ul a {
+	text-decoration: none;
+	font-weight: bold;
+	color:#00467f;
+}
+ul a:hover {
+	color: orange;
+}
+/***************  TABLE  **************/
+table {
+	border-collapse:collapse; /* table og td borðar falla saman í eina heild */ 
+	border: 3px solid #00467f;
+	border-width:3px 0; /* tekur út borða hægra og vinstra megin */
+	font-size: 0.9em;
+	width:95%;
+	margin:1em;
+	
+}
+table th {
+	background:#ddd;
+	border: 1px solid #00467f;
+	border-width:1px 0; /* tekur út borða hægra og vinstra megin */
+}
+table tfoot td {
+	text-align:center;
+	background:#ddd;
+	font-style:italic;
+	border-width:1px 0; /* tekur út borða hægra og vinstra megin */
+}
+table tr {
+	height:30px; /* gott að setja hæð á tr tagið */
+}
+table td {
+	background-color:#fff;
+	padding:3px;
+	border: 1px solid #00467f;
+	text-align:center;
+	border-width:1px 0; /* tekur út borða hægra og vinstra megin */
+}
+
+caption { 
+	margin-bottom:.8em;
+	text-align:left;
+	font-weight:bold;	
+}
+
+/* ==============  Helper classes  =============== */
+
+.overhidden{
+	overflow:hidden;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.virkur:before {
+	color: #D15600;
+    content:">>  ";
+}
+.virk {
+	color:#D15600;
+	border: 2px inset #999;
+}
+/*.virk:visited {
+	color:#eee;
+}*/
+.smallp {
+	width:12em;
+	height:12em;
+}
+.imgportrett {
+	padding: 1em 0 0 2.8em;
+}
+.txtRight {
+	text-align: right;
+}
+.marginTop2em {
+	margin-top: 2em;
+}
+.marginTop3em {
+	margin-top: 3em;
+}
+.flright {
+	float: right;
+}
+.intro {
+	background-color: rgb(201,224,242);
+	background-image:url('../images/66qoute.png'), url('../images/99qoute.png');
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	padding: 3em;
+}
+
+.intro h3 {
+	font-weight: normal;
+	padding: 0 3em;
+	text-align: center;
+	line-height: 1.6em
+}
+.topMenu {
+	display: flex;
+	flex-flow: row;
+	padding: 0;
+	margin-top:2.6em;
+}
+.topMenu a {
+	
+	border: 1px solid;
+	text-decoration: none;
+	font-weight: bold;
+	color:#00467f;
+	padding: 0 1em;
+}
+.topMenu a:hover {
+	color: orange;
+}
+.padding0 {
+	padding: 0;
+}

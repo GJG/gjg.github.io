@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body 
+{
+    background-color: #1a1a1a;
+    font: 1em/1.6em sans-serif;
+    text-align: center;
+}
+h1 {
+	color: rgb(199,199,199);
+	font-weight: normal;
+}
+p {
+    color: #fff;
+}
+a {
+    color: #ff0;
+}
+.media
+{
+    margin:1em auto;
+    width: 100%;
+    max-width:1024px;
+}
+video {
+	width: 100%;
+	height: auto;
+}
+
